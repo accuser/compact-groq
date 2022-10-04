@@ -1,0 +1,14 @@
+lockfileVersion: 5.4
+
+specifiers:
+  groq: ^2.33.2
+
+devDependencies:
+  groq: 2.33.2
+
+packages:
+
+  /groq/2.33.2:
+    resolution: {integrity: sha512-5pf4c91JESCS28IJCgolJq/WBw4Xvf2m8FgZVUlrCig17I+qERosALAHLyyutXu403EYnyCD3DdCLaPb3aGneA==}
+    engines: {node: '>=6'}
+    dev: true

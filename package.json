@@ -1,0 +1,28 @@
+{
+  "name": "@accuser/compact-groq",
+  "version": "0.1.0",
+  "description": "Remove redundant whitespace from a groq template literal.",
+  "keywords": [
+    "groq"
+  ],
+  "homepage": "https://github.com/accuser/compact-groq/README.md",
+  "bugs": {
+    "url": "https://github.com/accuser/compact-groq/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Matthew Gibbons",
+    "url": "https://github.com/accuser"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/accuser/compact-groq.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "groq": "^2.33.2"
+  }
+}
