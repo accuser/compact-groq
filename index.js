@@ -1,4 +1,4 @@
-import groq from 'groq';
+import groq from "groq";
 
 /**
  * Remove redundant whitespace from a groq template literal.
@@ -6,8 +6,10 @@ import groq from 'groq';
  * @returns groq template literal.
  */
 const compact_groq = (literals, ...placeholders) =>
-	groq(literals, placeholders)
-		.replaceAll(/\s{2,}/g, ' ')
-		.trim();
+  groq(literals, placeholders)
+    .replaceAll(/\s{2,}(?=(?:[^"]*"[^"]*")*[^"]*$)/g, " ")
+    .replaceAll(/\s](?=(?:[^"]*"[^"]*")*[^"]*$)/g, "]")
+    .replaceAll(/\[\s(?=(?:[^"]*"[^"]*")*[^"]*$)/g, "[")
+    .trim();
 
 export default compact_groq;
