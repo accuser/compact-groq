@@ -18,15 +18,17 @@
     "type": "git",
     "url": "git+https://github.com/accuser/compact-groq.git"
   },
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "groq": "^2.33.2"
+    "test": "vitest --run"
   },
   "exports": {
     "./package.json": "./package.json",
     ".": "./index.js"
+  },
+  "dependencies": {
+    "groq": "^2.33.2",
+    "vitest": "^0.23.4"
   }
 }
