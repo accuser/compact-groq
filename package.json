@@ -24,5 +24,9 @@
   },
   "devDependencies": {
     "groq": "^2.33.2"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./index.js"
   }
 }
